@@ -13,6 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 import hu.bme.aut.android.stockdatamonitor.network.RequestInterceptor
 import com.skydoves.sandwich.coroutines.CoroutinesResponseCallAdapterFactory
+import hu.bme.aut.android.stockdatamonitor.network.HistoricalDataService
 
 
 @Module
