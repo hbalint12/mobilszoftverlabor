@@ -1,20 +1,25 @@
 package hu.bme.aut.android.stockdatamonitor.di
 
+
+import hu.bme.aut.android.stockdatamonitor.network.HistoricalDataService
+import hu.bme.aut.android.stockdatamonitor.persistence.StockDataDao
+import hu.bme.aut.android.stockdatamonitor.ui.main.MainRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
-import hu.bme.aut.android.stockdatamonitor.network.HistoricalDataService
-import retrofit2.Retrofit
-import javax.inject.Singleton
-
+import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.android.scopes.ViewModelScoped
 
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(ViewModelComponent::class)
 object RepositoryModule {
+
     @Provides
-    @Singleton
-    fun provideDisneyService(retrofit: Retrofit): HistoricalDataService {
-        return retrofit.create(HistoricalDataService::class.java)
+    @ViewModelScoped
+    fun provideMainRepository(
+            historicalDataService: HistoricalDataService,
+            stockDataDao: StockDataDao
+    ): MainRepository {
+        return MainRepository(historicalDataService, stockDataDao)
     }
 }
