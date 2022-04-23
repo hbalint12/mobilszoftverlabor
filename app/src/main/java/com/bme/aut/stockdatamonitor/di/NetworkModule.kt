@@ -11,6 +11,10 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
+import hu.bme.aut.android.stockdatamonitor.network.RequestInterceptor
+import coil.util.CoilUtils
+import hu.bme.aut.android.stockdatamonitor.coroutines.CoroutinesResponseCallAdapterFactory
+
 
 
 @Module
