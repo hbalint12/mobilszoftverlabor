@@ -12,7 +12,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 import hu.bme.aut.android.stockdatamonitor.network.RequestInterceptor
-import coil.util.CoilUtils
 import hu.bme.aut.android.stockdatamonitor.coroutines.CoroutinesResponseCallAdapterFactory
 
 
@@ -26,7 +25,6 @@ object NetworkModule {
     fun provideOkHttpClient(@ApplicationContext context: Context): OkHttpClient {
         return OkHttpClient.Builder()
                 .addInterceptor(RequestInterceptor())
-                .cache(CoilUtils.createDefaultCache(context))
                 .build()
     }
 
