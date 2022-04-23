@@ -37,7 +37,6 @@ object NetworkModule {
                         "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=R9RRIPY5ZHSNL3X6\n"
                 )
                 .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(CoroutinesResponseCallAdapterFactory.create())
                 .build()
     }
 
