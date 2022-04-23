@@ -21,7 +21,7 @@ object PersistenceModule {
                 .databaseBuilder(
                         application,
                         AppDatabase::class.java,
-                        application.getString("StockData.db")
+                        application.getString(R.string.database)
                 )
                 .fallbackToDestructiveMigration()
                 .build()
