@@ -67,4 +67,6 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.1"
+    implementation "com.github.skydoves:sandwich:1.2.4"
+    implementation "com.squareup.retrofit2:converter-gson:4.9.1"
 }
