@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 21
     buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.bme.aut.stockdatamonitor"
-        minSdkVersion 31
+        minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
