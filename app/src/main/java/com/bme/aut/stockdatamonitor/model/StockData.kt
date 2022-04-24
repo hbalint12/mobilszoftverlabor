@@ -12,9 +12,9 @@ data class StockData(
         val id: Int,
         val name: String,
         val date: String,
-        val open: Double
-        val close: Double
-        val low: Double
+        val open: Double,
+        val close: Double,
+        val low: Double,
         val high: Double
 ){
 
@@ -24,9 +24,9 @@ data class StockData(
                 id = 1,
                 name = "AAPL",
                 date = "2022-04-13",
-                close = 165.3
-                open = 164.3
-                low = 163.3
+                close = 165.3,
+                open = 164.3,
+                low = 163.3,
                 high = 175.3
         )
     }
