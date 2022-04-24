@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">StockDataMonitor</string>
+    <string name="app_name">stockdatamonitor</string>
+    <string name="database">stockdatamonitor.db</string>
 </resources>
