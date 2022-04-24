@@ -17,7 +17,6 @@ data class StockData(
         val low: Double,
         val high: Double
 ){
-
     companion object {
 
         fun mock() = StockData(
