@@ -1,9 +1,9 @@
 package hu.bme.aut.android.stockdatamonitor.di
 
 
-import hu.bme.aut.android.stockdatamonitor.network.HistoricalDataService
-import hu.bme.aut.android.stockdatamonitor.persistence.StockDataDao
-import hu.bme.aut.android.stockdatamonitor.ui.main.MainRepository
+import com.bme.aut.stockdatamonitor.network.HistoricalDataService
+import com.bme.aut.stockdatamonitor.persistence.StockDataDao
+import com.bme.aut.stockdatamonitor.ui.main.MainRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,8 +17,8 @@ object RepositoryModule {
     @Provides
     @ViewModelScoped
     fun provideMainRepository(
-            historicalDataService: HistoricalDataService,
-            stockDataDao: StockDataDao
+        historicalDataService: HistoricalDataService,
+        stockDataDao: StockDataDao
     ): MainRepository {
         return MainRepository(historicalDataService, stockDataDao)
     }

@@ -1,8 +1,8 @@
-package hu.bme.aut.android.stockdatamonitor.persistence
+package com.bme.aut.stockdatamonitor.persistence
 
 import androidx.room.Dao
 import androidx.room.Query
-import hu.bme.aut.android.stockdatamonitor.model.StockData
+import com.bme.aut.stockdatamonitor.model.StockData
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 

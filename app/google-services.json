@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "120492318957",
+    "project_id": "mobilszoftverlab5",
+    "storage_bucket": "mobilszoftverlab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120492318957:android:944bd74fe1e0b19063ace4",
+        "android_client_info": {
+          "package_name": "com.bme.aut.stockdatamonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120492318957-m3n974m6stebs5ua2m7ae5ts8br1vf0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6azppPRqht470xyeqv8hI60T3jULTbT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120492318957-m3n974m6stebs5ua2m7ae5ts8br1vf0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

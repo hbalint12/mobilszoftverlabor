@@ -1,4 +1,4 @@
-package hu.bme.aut.android.stockdatamonitor
+package com.bme.aut.stockdatamonitor
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

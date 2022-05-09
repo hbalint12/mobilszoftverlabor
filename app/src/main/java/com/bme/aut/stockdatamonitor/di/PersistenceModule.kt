@@ -6,8 +6,8 @@ import dagger.hilt.components.SingletonComponent
 import android.app.Application
 import androidx.room.Room
 import com.bme.aut.stockdatamonitor.R
-import hu.bme.aut.android.stockdatamonitor.persistence.AppDatabase
-import hu.bme.aut.android.stockdatamonitor.persistence.StockDataDao
+import com.bme.aut.stockdatamonitor.persistence.AppDatabase
+import com.bme.aut.stockdatamonitor.persistence.StockDataDao
 import dagger.Provides
 import javax.inject.Singleton
 
